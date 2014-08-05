@@ -11,7 +11,6 @@
   "priority": 100,
   "scenes": {
     "system_editor": [
-      "coui://ui/mods/surface_area/surface_area.css",
       "coui://ui/mods/surface_area/surface_area.js"
     ]
   },
