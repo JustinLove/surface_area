@@ -6,7 +6,7 @@
   "date": "2014/08/05",
   "description": "Show the estimated surface area in the sytem editor",
   "display_name": "Surface Area",
-  "forum": null,
+  "forum": "https://forums.uberent.com/threads/rel-surface-area.62643/",
   "identifier": "com.wondible.pa.surface_area",
   "priority": 100,
   "scenes": {
@@ -15,6 +15,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "0.1.0"
+  "version": "1.0.0"
 }
 
