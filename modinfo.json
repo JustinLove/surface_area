@@ -1,0 +1,21 @@
+{
+  "author": "wondible",
+  "build": "69721",
+  "category": ["system-editor", "ui"],
+  "context": "client",
+  "date": "2014/08/05",
+  "description": "Show the estimated surface area in the sytem editor",
+  "display_name": "Surface Area",
+  "forum": null,
+  "identifier": "com.wondible.pa.surface_area",
+  "priority": 100,
+  "scenes": {
+    "system_editor": [
+      "coui://ui/mods/surface_area/surface_area.css",
+      "coui://ui/mods/surface_area/surface_area.js"
+    ]
+  },
+  "signature": "not yet implemented",
+  "version": "0.1.0"
+}
+
