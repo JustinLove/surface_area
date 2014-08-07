@@ -1,20 +1,13 @@
 (function() {
+  var km2 = 1000000
+
   var formatedString = function (number) {
-      var formats = [{ postfix: '', divisor: 1 },
-                     { postfix: 'K', divisor: 1000 },
-                     { postfix: 'M', divisor: 1000000 },
-                     { postfix: 'G', divisor: 1000000000 },
-                     { postfix: 'T', divisor: 1000000000000 }];
-
-      number = Math.floor(number);
-      if (number === 0)
-          return '0';
-      var numDigits = String(Math.abs(number)).length;
-      var format = formats[Math.floor((numDigits - 1) / 3)];
-
-      number = format.postfix ? (number / format.divisor).toPrecision(3) : number = number / format.divisor
-
-      return number + format.postfix
+    var number = number / km2
+    if (number < 1000) {
+      return number.toPrecision(3)
+    } else {
+      return Math.floor(number)
+    }
   };
   
   model.systemSurfaceArea = ko.computed(function() {
@@ -37,5 +30,5 @@
   })
 
   $('.div_sys_editor_group table tr:nth(3) td:first')
-    .append('<div><span data-bind="text: model.planetSurfaceArea"></span> m<sup>2</sup></div>')
+    .append('<div><span data-bind="text: model.planetSurfaceArea"></span> km<sup>2</sup></div>')
 })()
