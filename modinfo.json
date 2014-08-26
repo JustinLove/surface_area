@@ -1,9 +1,9 @@
 {
   "author": "wondible",
-  "build": "69721",
+  "build": "70289",
   "category": ["system-editor", "ui"],
   "context": "client",
-  "date": "2014/08/06",
+  "date": "2014/08/26",
   "description": "Show the estimated surface area in the sytem editor",
   "display_name": "Surface Area",
   "forum": "https://forums.uberent.com/threads/rel-surface-area.62643/",
@@ -11,10 +11,11 @@
   "priority": 100,
   "scenes": {
     "system_editor": [
+      "coui://ui/mods/surface_area/surface_area.css",
       "coui://ui/mods/surface_area/surface_area.js"
     ]
   },
   "signature": "not yet implemented",
-  "version": "1.1.0"
+  "version": "1.2.0"
 }
 

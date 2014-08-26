@@ -25,7 +25,7 @@
 
   $.get('coui://ui/mods/surface_area/surface_area.html').then(function(html) {
     var $html = $(html)
-    $('#version_info').append($html)
+    $('.div_header_bar').after($html)
     ko.applyBindings(model, $html.get(0));
   })
 
