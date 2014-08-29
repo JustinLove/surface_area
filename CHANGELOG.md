@@ -1,3 +1,7 @@
+## 1.3
+
+- Report gas surface area separately.  Currently hardcoded for gas, so it will need an update if people start making other terrainless biomes
+
 ## 1.2
 
 - Move the system surface area out of the version div, since that div disppared in the last PTE.

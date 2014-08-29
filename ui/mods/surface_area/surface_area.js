@@ -18,6 +18,26 @@
     return formatedString(area, false)
   })
 
+  model.gasSurfaceArea = ko.computed(function() {
+    var area = 0
+    model.system().planets.forEach(function(planet) {
+      if (planet.planet.biome == 'gas') {
+        area += 4 * Math.PI * Math.pow(planet.planet.radius, 2)
+      }
+    })
+    return formatedString(area, false)
+  })
+
+  model.terrainSurfaceArea = ko.computed(function() {
+    var area = 0
+    model.system().planets.forEach(function(planet) {
+      if (planet.planet.biome != 'gas') {
+        area += 4 * Math.PI * Math.pow(planet.planet.radius, 2)
+      }
+    })
+    return formatedString(area, false)
+  })
+
   model.planetSurfaceArea = ko.computed(function() {
     var area = 4 * Math.PI * Math.pow(model.radius(), 2)
     return formatedString(area, false)
