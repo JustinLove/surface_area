@@ -1,3 +1,8 @@
+## 1.3.1
+
+- Fix current-planet area display
+- Make current-planet interactive with slider
+
 ## 1.3
 
 - Report gas surface area separately.  Currently hardcoded for gas, so it will need an update if people start making other terrainless biomes

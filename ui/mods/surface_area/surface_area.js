@@ -43,12 +43,18 @@
     return formatedString(area, false)
   })
 
+  setTimeout(function() {
+    model.sliders.radius.on('slide', function(ev) {
+      model.radius(ev.value)
+    })
+  }, 0)
+
   $.get('coui://ui/mods/surface_area/surface_area.html').then(function(html) {
     var $html = $(html)
     $('.div_header_bar').after($html)
     ko.applyBindings(model, $html.get(0));
   })
 
-  $('.div_sys_editor_group table tr:nth(3) td:first')
+  $('#terrain_controls .div_settings_control_lbl:nth(2)')
     .append('<div><span data-bind="text: model.planetSurfaceArea"></span> km<sup>2</sup></div>')
 })()
